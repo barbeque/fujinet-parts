@@ -1,4 +1,4 @@
-25958559779716401
+25960334840477578
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -59716,6 +59716,13 @@ ESP32-S3-CAM
 0
 40
 40
+FujiNet
+MAX98357A_i2c_Breakout
+
+
+0
+0
+0
 FujiNet
 WaveShare-Core-RP2350B
 
