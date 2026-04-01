@@ -819,6 +819,230 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "FujiNet:MAX98357a_Breakout"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "FujiNet:MAX98357A_i2c_Breakout"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://learn.adafruit.com/adafruit-max98357-i2s-class-d-mono-amp?view=all"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Breakout board for the i2s interface to MAX98327A amplifier. Various copies exist on Amazon, etc, but the measurements are from Adafruit, which seem to eyeball out."
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MAX98357a_Breakout_1_1"
+				(rectangle
+					(start -7.62 -5.715)
+					(end 6.35 -31.75)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input clock
+					(at -10.16 -11.43 0)
+					(length 2.54)
+					(name "L/RC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "LRC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input clock
+					(at -10.16 -13.97 0)
+					(length 2.54)
+					(name "BCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "BCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -16.51 0)
+					(length 2.54)
+					(name "Din"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "DIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -21.59 0)
+					(length 2.54)
+					(name "Gain"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -24.13 0)
+					(length 2.54)
+					(name "~{SD}/MODE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "SD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -2.54 270)
+					(length 2.54)
+					(name "Vin"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "Vin"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -34.29 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 8.89 -10.16 180)
+					(length 2.54)
+					(name "SPK+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 8.89 -12.7 180)
+					(length 2.54)
+					(name "SPK-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "FujiNet:WaveShare-Core-RP2350B"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2180,6 +2404,97 @@
 			(project ""
 				(path "/88ea2842-8e8d-4bde-98e3-2cb923ce1bc7"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "FujiNet:MAX98357a_Breakout")
+		(at 135.255 70.485 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a85f909-0c42-4295-acbf-cb8eb0decec7")
+		(property "Reference" "U3"
+			(at 137.3983 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 137.3983 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "FujiNet:MAX98357A_i2c_Breakout"
+			(at 135.255 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://learn.adafruit.com/adafruit-max98357-i2s-class-d-mono-amp?view=all"
+			(at 135.255 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Breakout board for the i2s interface to MAX98327A amplifier. Various copies exist on Amazon, etc, but the measurements are from Adafruit, which seem to eyeball out."
+			(at 135.255 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "+"
+			(uuid "e0950385-06f4-4d96-a23c-da1fbd3b726e")
+		)
+		(pin "-"
+			(uuid "2472e67b-8dc7-48b4-8e2b-e46215f4bd5d")
+		)
+		(pin "G"
+			(uuid "36df77f4-e731-47aa-8d00-76084741390a")
+		)
+		(pin "DIN"
+			(uuid "cb3d3e59-b4d2-40db-a973-2cf6aece0185")
+		)
+		(pin "LRC"
+			(uuid "4b0a742d-8ea7-470a-8307-15a3629420f6")
+		)
+		(pin "BCLK"
+			(uuid "1799567e-3321-417d-9187-f69113e702e6")
+		)
+		(pin "SD"
+			(uuid "4b679f15-8a0b-4635-a5f2-5fa5e221a96c")
+		)
+		(pin "GND"
+			(uuid "b1e216d1-d6f7-4272-a57f-8e52b81f25fc")
+		)
+		(pin "Vin"
+			(uuid "8a6276d2-098d-4d73-98ec-b391ef5a2628")
+		)
+		(instances
+			(project ""
+				(path "/88ea2842-8e8d-4bde-98e3-2cb923ce1bc7"
+					(reference "U3")
 					(unit 1)
 				)
 			)

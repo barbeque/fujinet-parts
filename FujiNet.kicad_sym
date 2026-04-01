@@ -836,7 +836,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "FujiNet:MAX98357A_i2c_Breakout"
 			(at 0 0 0)
 			(effects
 				(font
